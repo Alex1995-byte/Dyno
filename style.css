@@ -1,0 +1,102 @@
+.game {
+    background-image: url("images/new-fone.jpg!bwr800");
+    background-size: 600px 200px;
+    width: 600px;
+    height: 200px;
+    border-bottom: 1px solid rgb(1, 157, 32);
+    margin: auto;
+    position: relative;
+}
+section {
+    text-align: center;
+    margin: 50px 0;
+}
+.window-start {
+    text-align: center;
+    width: 100px;
+    height: 50px;
+    background-color: rgb(241, 245, 127);
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    z-index: 1;
+}
+.window-start span {
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    margin-top: 12px;
+}
+
+#dino {
+    width: 60px;
+    height: 50px;
+    background-image: url("images/dyno.png");
+    background-size: 60px 50px;
+    position: relative;
+    top: 150px;
+}
+
+button {
+    margin-bottom: 20px;
+}
+#cactus {
+    width: 35px;
+    height: 40px;
+    background-image: url("images/cactus2.png");
+    background-size: 35px 40px;
+    position: relative;
+    top: 110px;
+    left: 580px;
+}
+.cactus-anim {
+    animation:cactusMov 3.5s infinite linear;
+}
+@keyframes cactusMov {
+    0% {
+        left: 580px;
+    }
+    /* 50% {
+        top: 70px;
+    }
+    80% {
+        top: 170px;
+    } */
+    100%{
+        left: -5px;
+    }
+}
+
+.jump {
+    animation: jamp 0.3s linear;
+}
+
+@keyframes jamp {
+    0% {
+        top: 150px;
+    }
+    30% {
+        top: 130px;
+    }
+   50% {
+        top: 50px;
+    }
+   80% {
+        top: 130px;
+    }
+
+    100%{
+        top: 150px;
+    }
+}
+
+
+
+
+
+
+
